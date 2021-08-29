@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IjkMediaPlayerTestActivity"
+    android:focusable="false">
+
+    <RelativeLayout
+        android:id="@+id/root_rl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000000">
+
+
+
+        <com.example.myapplication_tv2.ijk.media.IjkVideoView
+            android:id="@+id/ijk_video_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:id="@+id/playOrPause2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@android:drawable/ic_media_play"/>
+        <LinearLayout
+            android:id="@+id/control_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#005500"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:id="@+id/tv_start_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:text="00.00"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:id="@+id/tv_separate_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_start_time2"
+                    android:layout_marginLeft="1dp"
+                    android:text="/"
+                    android:textColor="#ffffff"/>
+                <TextView
+                    android:id="@+id/tv_end_time2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_separate_time2"
+                    android:layout_marginLeft="1dp"
+                    android:text="00.00"
+                    android:textColor="#ffffff"/>
+                <ImageView
+                    android:id="@+id/tv_backward2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_start_time2"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="1dp"
+                    android:src="@android:drawable/ic_media_rew"/>
+
+                <SeekBar
+                    android:focusable="false"
+                    android:id="@+id/tv_progess2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_backward2"
+                    android:layout_toLeftOf="@+id/tv_forward2"
+                    android:layout_marginTop="7dp"
+                    android:layout_below="@+id/tv_start_time2"/>
+
+                <ImageView
+                    android:id="@+id/tv_forward2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_start_time2"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="1dp"
+                    android:src="@android:drawable/ic_media_ff"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:focusable="true"
+            android:id="@+id/btn1_changeurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="切换1"/>
+        <Button
+            android:focusable="true"
+            android:id="@+id/btn2_changeurl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn1_changeurl"
+            android:text="切换2"/>
+        <Button
+            android:focusable="true"
+            android:id="@+id/btn_playagain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn2_changeurl"
+            android:text="播放"/>
+
+        <Button
+            android:focusable="true"
+            android:id="@+id/btn_AndroidPlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_playagain"
+            android:text="切换MediaPlayer"/>
+
+
+        <TableLayout
+            android:id="@+id/hud_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="right|center_vertical"
+            android:padding="8dp"
+            tools:ignore="RtlHardcoded" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

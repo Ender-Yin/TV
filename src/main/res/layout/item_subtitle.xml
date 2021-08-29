@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:focusable="false"
+    android:layout_marginLeft="50dp">
+
+    <TextView
+        android:id="@+id/text_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="首播影院 · 大片尽情畅想"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp" />
+</RelativeLayout>

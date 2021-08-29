@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="10dp"
+    android:padding="10dp">
+
+
+    <Button
+        android:id="@+id/main_menu_btn"
+        android:layout_width="118dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mainpage_menu_btn"
+        android:text="电视剧"
+        android:textSize="26sp" />
+
+</FrameLayout>

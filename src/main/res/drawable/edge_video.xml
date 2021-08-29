@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--仅仅是改变边 -->
+    <item android:state_focused="true" android:drawable="@drawable/edge_video_focus"/>
+</selector>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    android:minHeight="1px">
+
+
+    <com.example.myapplication_tv2.myWidget.TvRecyclerView
+        android:id="@+id/Soap_category_list"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="35dp"
+        android:clipToPadding="false"
+        android:focusable="false" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Soap_video_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="0dp"
+        android:layout_toEndOf="@+id/Soap_category_list"
+        android:clipToPadding="false"
+        android:focusable="false"
+        android:paddingBottom="15dp" />
+
+
+
+</RelativeLayout>

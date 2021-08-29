@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.example.myapplication_tv2.myWidget.GridRecyclerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/recycler_view_mainpage_videos"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+         />
+
